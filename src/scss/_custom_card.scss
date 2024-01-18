@@ -1,0 +1,107 @@
+.card-custom {
+  border: unset !important;
+  border-radius: 0 !important;
+
+  .card-header {
+    border: none;
+    background: unset;
+    padding-bottom: 10px;
+  }
+  .header-search-area {
+    border: 1px solid rgba(0, 0, 21, 0.175);
+    padding: var(--cui-card-cap-padding-y) var(--cui-card-cap-padding-x);
+    border-radius: var(--cui-card-border-radius);
+    margin-top: 1.5rem;
+  }
+}
+
+.main-btn {
+  // padding: 10px 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  background-color: #37ffb3;
+  color: #000;
+  border: 1px solid #00ff9e;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px #1cc383;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  &:hover {
+    background-color: #37e2a0;
+    border: 1px solid #00ff9e;
+    color: #000;
+    box-shadow: 2px 2px 1px #1cc383;
+    transform: translateY(-2px);
+  }
+
+  /* Active effect */
+  &:active {
+    background-color: #37ffb3 !important;
+    border: 1px solid #00ff9e !important;
+    color: #000 !important;
+    box-shadow: none;
+    transform: translateY(2px);
+  }
+  &:disabled {
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #37ffb3;
+    color: #000;
+    border: 1px solid #00ff9e;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px #1cc383;
+    opacity: var(--cui-btn-disabled-opacity);
+  }
+}
+
+.header-title-custom {
+  padding: 0.1rem 0.25rem 0.2rem 0.3rem;
+  border-left: 0.25rem solid #1cc383;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.header-title-sub-custom {
+  padding: 0.05rem 0.25rem 0.1rem 0.3rem;
+  border-left: 0.25rem solid #1cc383;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.table-border-custom {
+  border-width: 2px !important;
+}
+
+.table-border-custom > :not(caption) > * {
+  border-width: 2px 0 !important;
+}
+
+.table-border-custom > :not(caption) > * > * {
+  border-width: 0 2px !important;
+}
+
+.header-content-custom {
+  border: 1px solid rgba(0, 0, 21, 0.175);
+  width: 100%;
+  display: flex;
+  gap: 0px;
+}
+
+.header-content-left {
+  padding: 0.75rem var(--cui-card-cap-padding-x);
+  background-color: #6affc6;
+  border-right: 1px solid rgba(0, 0, 21, 0.175);
+  font-weight: 500;
+}
+
+.header-content-right {
+  padding: 0.25rem 0.25rem 0.25rem 0.3rem;
+}
+
+.dropdown-item-disabled {
+  cursor: not-allowed;
+  a {
+    color: var(--cui-dropdown-link-color);
+    background-color: #fff;
+  }
+}
